@@ -3,6 +3,12 @@
 :root {
 	/* Colors */
 	--bg: #fff;
+	--bg-alt: #333;
+	--bg-alt-2: #f0f0f0;
+	--bg-tranparent: #fffe78;
+	--border: 0.01rem solid #333;
+	--text: #333;
+	--text-alit: #fff;
 
 	/* Face animation */
 	--tl-1: url(../assets/face-animation-light/tl-1.png);
