@@ -13,3 +13,10 @@ body {
 	margin: 0;
 	-webkit-tap-highlight-color: transparent;
 }
+
+h1,
+h2,
+h5,
+p {
+	margin: 0;
+}
