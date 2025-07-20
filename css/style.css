@@ -26,3 +26,12 @@ p {
 	width: 2rem;
 	margin: 0 0.5rem;
 }
+
+/* HERO */
+
+#hero {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
