@@ -74,7 +74,7 @@
 	--br-4: url(../assets/face-animation-dark/brw-4.png);
 	--br-5: url(../assets/face-animation-dark/brw-5.png);
 
-	--sun: url(../assets/icons/sun.png);
+	--moon: url(../assets/icons/moon.png);
 }
 
 /* COLOR MODE TOGGLE BUTTON */
@@ -97,4 +97,12 @@
 	background-image: var(--sun);
 	background-size: cover;
 	cursor: pointer;
+}
+
+.dark-mode #toggle-button {
+	background-image: var(--moon);
+}
+
+.dark-mode #toggle-button {
+	justify-content: flex-end;
 }
