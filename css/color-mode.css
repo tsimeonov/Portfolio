@@ -12,6 +12,10 @@
 
 	/* Face animation */
 	--tl-1: url(../assets/face-animation-light/tl-1.png);
+	--tl-2: url(../assets/face-animation-light/tl-2.png);
+	--tl-3: url(../assets/face-animation-light/tl-3.png);
+	--tl-4: url(../assets/face-animation-light/tl-4.png);
+	--tl-5: url(../assets/face-animation-light/tl-5.png);
 }
 
 /* COLOR MODE TOGGLE BUTTON */
