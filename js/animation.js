@@ -67,5 +67,19 @@ tlBtn.onclick = function () {
 		tlBtn.innerHTML = '&uarr;<br/>About';
 
 		handleWindowResize();
+		playAnimation('animate-top-left', 'reverse-animate-top-left');
+
+		// Change background colors
+		trBtn.style.background = bgColor;
+		brBtn.style.background = bgColor;
+		blBtn.style.background = bgColor;
+		tlBtn.style.background = bgColorAlt;
+
+		// Change text colors
+
+		trBtn.style.color = textColor;
+		brBtn.style.color = textColor;
+		blBtn.style.color = textColor;
+		tlBtn.style.color = textColorAlt;
 	}
 };
