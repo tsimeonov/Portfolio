@@ -144,3 +144,12 @@ article {
 	width: 5.75rem;
 	min-width: 8.75rem;
 }
+
+article h2 {
+	font-size: 1rem;
+	padding: 0.3rem;
+}
+
+article p {
+	padding-bottom: 0.3rem;
+}
