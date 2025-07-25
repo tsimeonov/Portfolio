@@ -134,5 +134,13 @@ p {
 }
 
 article {
-	background: rebeccapurple;
+	background: rgb(245, 245, 245);
+	font-size: 0.8rem;
+	list-style: none;
+	border: var(--border);
+	border-radius: 2rem;
+	padding: 0.5rem;
+	margin: 1rem;
+	width: 5.75rem;
+	min-width: 8.75rem;
 }
