@@ -131,3 +131,40 @@ trBtn.onclick = function () {
 		tlBtn.style.transform = tlHidden;
 	}
 };
+
+blBtn.onclick = function () {
+	if (activeCorner === 'top-right') {
+		playClosingAnimation('reverse-animate-top-right');
+	} else {
+		tlBtn.innerHTML = 'About';
+		blBtn.innerHTML = 'Projects';
+		brBtn.innerHTML = 'Contact';
+
+		// Setting activeCorner
+		activeCorner = 'top-right';
+		trBtn.innerHTML = '&uarr;<br/>Experience';
+
+		handleWindowResize();
+		playAnimation('animate-top-right', 'reverse-animate-top-right');
+
+		// Change background colors
+		trBtn.style.background = bgColorAlt;
+		brBtn.style.background = bgColor;
+		blBtn.style.background = bgColor;
+		tlBtn.style.background = bgColor;
+
+		// Change text colors
+
+		trBtn.style.color = textColorAlt;
+		brBtn.style.color = textColor;
+		blBtn.style.color = textColor;
+		tlBtn.style.color = textColor;
+
+		// Change positions of the corner content
+
+		trBtn.style.transform = trActive;
+		brBtn.style.transform = brHidden;
+		blBtn.style.transform = blHidden;
+		tlBtn.style.transform = tlHidden;
+	}
+};
