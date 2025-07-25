@@ -30,3 +30,5 @@ function saveColorMode() {
 	localStorage.setItem(storageKey, currentMode);
 	updateToggleButton();
 }
+
+function updateToggleButton() {}
