@@ -16,6 +16,8 @@ loadColorMode();
 
 toggleButton.addEventListener('click', () => {
 	// Some code functionality here to run
+	console.log('test');
+	saveColorMode();
 });
 
 // Save the user\s preeffered color mode to local storage
@@ -31,4 +33,10 @@ function saveColorMode() {
 	updateToggleButton();
 }
 
-function updateToggleButton() {}
+function updateToggleButton() {
+	if (root.classList.contains('darkmode')) {
+		toggleButton.style.backgroundImage = 'var(--moon)';
+	} else {
+		toggleButton.style.backgroundImage = 'var(--sun)';
+	}
+}
