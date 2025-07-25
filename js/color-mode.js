@@ -19,3 +19,7 @@ toggleButton.addEventListener('click', () => {
 });
 
 // Save the user\s preeffered color mode to local storage
+function saveColorMode() {
+	// Check if the root element gas a class of "dawrk-mode".
+	// If yes, then the current mode is switched to light and vice versa
+}
