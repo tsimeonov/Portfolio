@@ -37,3 +37,24 @@ let blHidden = 'translateX(-100vw) translateY(100vh)';
 
 let brActive = 'translateX(-5vw) translateY(0)';
 let brHidden = 'translateX(100vw) translateY(100vh)';
+
+// Define corner that is open
+let activeCorner = '';
+
+// Add an event listener to the window object to listen to resize events
+window.addEventListener('resize', handleWindowResize);
+
+// Function that handles the styling when resizing window
+function handleWindowResize() {
+	// some code
+}
+
+// Store last reverse animation, ready to be played
+let lastReverseAnimation = '';
+
+// Play animation function
+function playAnimation(animation, reverseAnimation) {}
+
+function playClosingAnimation(reverseAnimation) {}
+
+tlBtn.onclick = fucntion () {}
