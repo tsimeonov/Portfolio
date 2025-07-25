@@ -107,3 +107,21 @@ p {
 #grid__br__btn {
 	padding-top: 0.5rem;
 }
+
+#grid__tl__btn:active,
+#grid__br__btnactive {
+	transform: rotate(-45deg) scale(1.05);
+}
+
+#grid__bl__btn:active,
+#grid__br__btnactive {
+	transform: rotate(45deg) scale(1.05);
+}
+
+/* TOP LEFT CORNER */
+
+#grid__tl__btn {
+	top: -11.5rem;
+	left: -11.5rem;
+	transform: rotate(-45deg);
+}
