@@ -19,3 +19,11 @@ const brContent = document.querySelector('#grid__br_content');
 const projectOne = document.querySelector('.p-1');
 const projectTwo = document.querySelector('.p-2');
 const projectThree = document.querySelector('.p-3');
+
+// Define colors and positions
+const bgColor = 'var(--bg)';
+const bgColorAlt = 'var(--bg-alt)';
+const textColor = 'var(--text)';
+const textColorAlt = 'var(--textalt)';
+
+let tlActive = 1;
