@@ -62,6 +62,10 @@ tlBtn.onclick = function () {
 	if (activeCorner === 'top-left') {
 		playClosingAnimation('reverse-animate-top-left');
 	} else {
+		trBtn.innerHTML = 'Experience';
+		blBtn.innerHTML = 'Projects';
+		brBtn.innerHTML = 'Contact';
+
 		// Setting activeCorner
 		activeCorner = 'top-left';
 		tlBtn.innerHTML = '&uarr;<br/>About';
@@ -95,6 +99,10 @@ trBtn.onclick = function () {
 	if (activeCorner === 'top-right') {
 		playClosingAnimation('reverse-animate-top-right');
 	} else {
+		tlBtn.innerHTML = 'About';
+		blBtn.innerHTML = 'Projects';
+		brBtn.innerHTML = 'Contact';
+
 		// Setting activeCorner
 		activeCorner = 'top-right';
 		trBtn.innerHTML = '&uarr;<br/>Experience';
