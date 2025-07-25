@@ -81,5 +81,12 @@ tlBtn.onclick = function () {
 		brBtn.style.color = textColor;
 		blBtn.style.color = textColor;
 		tlBtn.style.color = textColorAlt;
+
+		// Change positions of the corner content
+
+		trBtn.style.transform = trHidden;
+		brBtn.style.transform = brHidden;
+		blBtn.style.transform = blHidden;
+		tlBtn.style.transform = tlActive;
 	}
 };
