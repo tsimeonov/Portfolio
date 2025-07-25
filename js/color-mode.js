@@ -11,3 +11,11 @@ function loadColorMode() {
 	// Some code functionality here to run
 }
 loadColorMode();
+
+// Toggle the color mode
+
+toggleButton.addEventListener('click', () => {
+	// Some code functionality here to run
+});
+
+// Save the user\s preeffered color mode to local storage
