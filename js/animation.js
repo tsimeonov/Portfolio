@@ -61,5 +61,11 @@ function playClosingAnimation(reverseAnimation) {}
 tlBtn.onclick = function () {
 	if (activeCorner === 'top-left') {
 		playClosingAnimation();
+	} else {
+		// Setting activeCorner
+		activeCorner = 'top-left';
+		tlBtn.innerHTML = '&uarr;<br/>About';
+
+		handleWindowResize();
 	}
 };
