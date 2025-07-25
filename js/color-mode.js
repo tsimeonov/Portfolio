@@ -37,7 +37,7 @@ function saveColorMode() {
 }
 
 function updateToggleButton() {
-	if (root.classList.contains('darkmode')) {
+	if (root.classList.contains('dark-mode')) {
 		toggleButton.style.backgroundImage = 'var(--moon)';
 	} else {
 		toggleButton.style.backgroundImage = 'var(--sun)';
