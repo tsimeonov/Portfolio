@@ -57,4 +57,9 @@ function playAnimation(animation, reverseAnimation) {}
 
 function playClosingAnimation(reverseAnimation) {}
 
-tlBtn.onclick = fucntion () {}
+// Onclick corner button functions
+tlBtn.onclick = function () {
+	if (activeCorner === 'top-left') {
+		playClosingAnimation();
+	}
+};
