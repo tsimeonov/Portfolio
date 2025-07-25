@@ -96,3 +96,14 @@ p {
 	transition: transfoem 0.3s ease-in-out;
 	color: var(--text-alt);
 }
+
+#grid__tl__btn,
+#grid__tr__btn {
+	padding-bottom: 0.5rem;
+	align-items: flex-end;
+}
+
+#grid__bl__btn,
+#grid__br__btn {
+	padding-top: 0.5rem;
+}
