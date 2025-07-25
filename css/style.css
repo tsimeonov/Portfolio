@@ -125,3 +125,14 @@ p {
 	left: -11.5rem;
 	transform: rotate(-45deg);
 }
+
+#grid__tl__content {
+	width: 30vw;
+	top: 10vh;
+	left: 0;
+	/* transform: translateX(-100vw) translateY(-100vh); */
+}
+
+article {
+	background: rebeccapurple;
+}
