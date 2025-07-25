@@ -60,7 +60,7 @@ function playClosingAnimation(reverseAnimation) {}
 // Onclick corner button functions
 tlBtn.onclick = function () {
 	if (activeCorner === 'top-left') {
-		playClosingAnimation();
+		playClosingAnimation('reverse-animate-top-left');
 	} else {
 		// Setting activeCorner
 		activeCorner = 'top-left';
@@ -88,5 +88,38 @@ tlBtn.onclick = function () {
 		brBtn.style.transform = brHidden;
 		blBtn.style.transform = blHidden;
 		tlBtn.style.transform = tlActive;
+	}
+};
+
+trBtn.onclick = function () {
+	if (activeCorner === 'top-right') {
+		playClosingAnimation('reverse-animate-top-right');
+	} else {
+		// Setting activeCorner
+		activeCorner = 'top-right';
+		trBtn.innerHTML = '&uarr;<br/>Experience';
+
+		handleWindowResize();
+		playAnimation('animate-top-right', 'reverse-animate-top-right');
+
+		// Change background colors
+		trBtn.style.background = bgColorAlt;
+		brBtn.style.background = bgColor;
+		blBtn.style.background = bgColor;
+		tlBtn.style.background = bgColor;
+
+		// Change text colors
+
+		trBtn.style.color = textColorAlt;
+		brBtn.style.color = textColor;
+		blBtn.style.color = textColor;
+		tlBtn.style.color = textColor;
+
+		// Change positions of the corner content
+
+		trBtn.style.transform = trActive;
+		brBtn.style.transform = brHidden;
+		blBtn.style.transform = blHidden;
+		tlBtn.style.transform = tlHidden;
 	}
 };
