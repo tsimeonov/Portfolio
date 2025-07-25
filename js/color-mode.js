@@ -22,4 +22,9 @@ toggleButton.addEventListener('click', () => {
 function saveColorMode() {
 	// Check if the root element gas a class of "dawrk-mode".
 	// If yes, then the current mode is switched to light and vice versa
+	const currentMode = root.classList.contains('dark-mode')
+		? 'light-mode'
+		: 'dark-mode';
+	root.classList.remove('light-mode', 'dark-mode');
+	root.classList.add(currentMode);
 }
