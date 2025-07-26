@@ -53,7 +53,20 @@ function handleWindowResize() {
 let lastReverseAnimation = '';
 
 // Play animation function
-function playAnimation(animation, reverseAnimation) {}
+function playAnimation(animation, reverseAnimation) {
+	if (lastReverseAnimation !== '') {
+		heroImage.classList.add(lastReverseAnimation);
+		setTimeout(function () {
+			heroImage.classList.remove(lastReverseAnimation);
+			heroImage.classList.add(animation);
+			lastReverseAnimation = reverseAnimation;
+		}, 200);
+	} else {
+		// play forward code here
+		heroImage.classList.add(animation);
+		lastReverseAnimation = reverseAnimation;
+	}
+}
 
 function playClosingAnimation(reverseAnimation) {}
 
