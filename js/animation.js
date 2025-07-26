@@ -53,10 +53,10 @@ function handleWindowResize() {
 				tlContent.style.width = '100vw';
 				tlContent.style.height = '100vh';
 				tlContent.style.top = '0';
-				tlContent.style.dispay = 'flex';
+				tlContent.style.display = 'flex';
 				tlContent.style.alignItems = 'center';
 				tlContent.style.justifyContent = 'center';
-				tlContent.style.background = 'var(--bg-transparent)';
+				tlContent.style.background = 'var(--bg-tranparent)';
 				tlContent.style.zIndex = '200';
 				tlBtn.style.zIndex = '300';
 				// trBtn.style.zIndex = '100';
@@ -66,8 +66,8 @@ function handleWindowResize() {
 				trActive = 'translateX(5vw) translateY(0)';
 				tlContent.style.transform = 'translateX(5vw) translateY(0)';
 				tlContent.style.width = '30vw';
-				tlContent.style.height = '0vh';
-				tlContent.style.top = '0';
+				tlContent.style.height = '0';
+				tlContent.style.top = '10vh';
 				tlContent.style.dispay = 'block';
 			}
 			break;

@@ -166,7 +166,6 @@ article p {
 .cards__content {
 	display: flex;
 	align-items: center;
-	outline: 1px solid red;
 }
 
 .cards__content__text {
