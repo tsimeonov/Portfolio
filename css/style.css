@@ -278,3 +278,10 @@ button {
 	border-radius: 1rem;
 	padding: 0.5rem;
 }
+
+.btn {
+	border-radius: 0;
+	height: 3rem;
+	flex-basis: 50%;
+	font-weight: 600;
+}
