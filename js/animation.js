@@ -75,26 +75,26 @@ function handleWindowResize() {
 		case 'top-right':
 			if (window.innerWidth <= 1100) {
 				trActive = 'translateX(0) translateY(0)';
-				tlContent.style.transform = 'translateX(0vw) translateY(0)';
-				tlContent.style.width = '100vw';
-				tlContent.style.height = '100vh';
-				tlContent.style.top = '0';
-				tlContent.style.display = 'flex';
-				tlContent.style.alignItems = 'center';
-				tlContent.style.justifyContent = 'center';
-				tlContent.style.background = 'var(--bg-tranparent)';
-				tlContent.style.zIndex = '200';
-				tlBtn.style.zIndex = '300';
-				trBtn.style.zIndex = '100';
+				trContent.style.transform = 'translateX(0vw) translateY(0)';
+				trContent.style.width = '100vw';
+				trContent.style.height = '100vh';
+				trContent.style.top = '0';
+				trContent.style.display = 'flex';
+				trContent.style.alignItems = 'center';
+				trContent.style.justifyContent = 'center';
+				trContent.style.background = 'var(--bg-tranparent)';
+				trContent.style.zIndex = '200';
+				trBtn.style.zIndex = '300';
+				tlBtn.style.zIndex = '100';
 				// blBtn.style.zIndex = '100';
 				// brBtn.style.zIndex = '100';
 			} else {
-				trActive = 'translateX(5vw) translateY(0)';
-				tlContent.style.transform = 'translateX(5vw) translateY(0)';
-				tlContent.style.width = '30vw';
-				tlContent.style.height = '0';
-				tlContent.style.top = '10vh';
-				tlContent.style.dispay = 'block';
+				trActive = 'translateX(-5vw) translateY(0)';
+				trContent.style.transform = 'translateX(5vw) translateY(0)';
+				trContent.style.width = '30vw';
+				trContent.style.height = '0';
+				trContent.style.top = '10vh';
+				trContent.style.dispay = 'block';
 			}
 			break;
 		case 'bottom-left':
@@ -142,9 +142,9 @@ function playClosingAnimation(reverseAnimation) {
 			tlContent.style.transform = tlHidden;
 			break;
 		case 'top-right':
-			tlBtn.style.background = bgColor;
-			tlBtn.style.color = textColor;
-			tlContent.style.transform = tlHidden;
+			trBtn.style.background = bgColor;
+			trBtn.style.color = textColor;
+			trContent.style.transform = trHidden;
 			break;
 		// case 'bottom-left':
 		// 	tlBtn.style.background = bgColor;
@@ -199,49 +199,49 @@ tlBtn.onclick = function () {
 
 		// Change positions of the corner content
 
-		trBtn.style.transform = trHidden;
-		// brBtn.style.transform = brHidden;
-		// blBtn.style.transform = blHidden;
+		trContent.style.transform = trHidden;
+		// brContent.style.transform = brHidden;
+		// blContent.style.transform = blHidden;
 		tlContent.style.transform = tlActive;
 	}
 };
 
-// trBtn.onclick = function () {
-// 	if (activeCorner === 'top-right') {
-// 		playClosingAnimation('reverse-animate-top-right');
-// 	} else {
-// 		tlBtn.innerHTML = 'About';
-// 		blBtn.innerHTML = 'Projects';
-// 		brBtn.innerHTML = 'Contact';
+trBtn.onclick = function () {
+	if (activeCorner === 'top-right') {
+		playClosingAnimation('reverse-animate-top-right');
+	} else {
+		tlBtn.innerHTML = 'About';
+		// blBtn.innerHTML = 'Projects';
+		// brBtn.innerHTML = 'Contact';
 
-// 		// Setting activeCorner
-// 		activeCorner = 'top-right';
-// 		trBtn.innerHTML = '&uarr;<br/>Experience';
+		// Setting activeCorner
+		activeCorner = 'top-right';
+		trBtn.innerHTML = '&uarr;<br/>Experience';
 
-// 		handleWindowResize();
-// 		playAnimation('animate-top-right', 'reverse-animate-top-right');
+		handleWindowResize();
+		playAnimation('animate-top-right', 'reverse-animate-top-right');
 
-// 		// Change background colors
-// 		trBtn.style.background = bgColorAlt;
-// 		brBtn.style.background = bgColor;
-// 		blBtn.style.background = bgColor;
-// 		tlBtn.style.background = bgColor;
+		// Change background colors
+		trBtn.style.background = bgColorAlt;
+		// brBtn.style.background = bgColor;
+		// blBtn.style.background = bgColor;
+		tlBtn.style.background = bgColor;
 
-// 		// Change text colors
+		// Change text colors
 
-// 		trBtn.style.color = textColorAlt;
-// 		brBtn.style.color = textColor;
-// 		blBtn.style.color = textColor;
-// 		tlBtn.style.color = textColor;
+		trBtn.style.color = textColorAlt;
+		// brBtn.style.color = textColor;
+		// blBtn.style.color = textColor;
+		tlBtn.style.color = textColor;
 
-// 		// Change positions of the corner content
+		// Change positions of the corner content
 
-// 		trBtn.style.transform = trActive;
-// 		brBtn.style.transform = brHidden;
-// 		blBtn.style.transform = blHidden;
-// 		tlBtn.style.transform = tlHidden;
-// 	}
-// };
+		trContent.style.transform = trActive;
+		// brContent.style.transform = brHidden;
+		// blContent.style.transform = blHidden;
+		tlContent.style.transform = tlHidden;
+	}
+};
 
 // blBtn.onclick = function () {
 // 	if (activeCorner === 'bottom-left') {
