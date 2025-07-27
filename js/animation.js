@@ -2,17 +2,17 @@
 const heroImage = document.querySelector('#hero__animation__img');
 
 const tl = document.querySelector('#grid__tl');
-// const tr = document.querySelector('#grid__tr');
+const tr = document.querySelector('#grid__tr');
 // const bl = document.querySelector('#grid__bl');
 // const br = document.querySelector('#grid__br');
 
 const tlBtn = document.querySelector('#grid__tl__btn');
-// const trBtn = document.querySelector('#grid__tr__btn');
+const trBtn = document.querySelector('#grid__tr__btn');
 // const blBtn = document.querySelector('#grid__bl__btn');
 // const brBtn = document.querySelector('#grid__br__btn');
 
 const tlContent = document.querySelector('#grid__tl__content');
-// const trContent = document.querySelector('#grid__tr__content');
+const trContent = document.querySelector('#grid__tr__content');
 // const blContent = document.querySelector('#grid__bl__content');
 // const brContent = document.querySelector('#grid__br__content');
 
@@ -49,6 +49,31 @@ function handleWindowResize() {
 	switch (activeCorner) {
 		case 'top-left':
 			if (window.innerWidth <= 1100) {
+				tlActive = 'translateX(0) translateY(0)';
+				tlContent.style.transform = 'translateX(0vw) translateY(0)';
+				tlContent.style.width = '100vw';
+				tlContent.style.height = '100vh';
+				tlContent.style.top = '0';
+				tlContent.style.display = 'flex';
+				tlContent.style.alignItems = 'center';
+				tlContent.style.justifyContent = 'center';
+				tlContent.style.background = 'var(--bg-tranparent)';
+				tlContent.style.zIndex = '200';
+				tlBtn.style.zIndex = '300';
+				trBtn.style.zIndex = '100';
+				// blBtn.style.zIndex = '100';
+				// brBtn.style.zIndex = '100';
+			} else {
+				tlActive = 'translateX(5vw) translateY(0)';
+				tlContent.style.transform = 'translateX(5vw) translateY(0)';
+				tlContent.style.width = '30vw';
+				tlContent.style.height = '0';
+				tlContent.style.top = '10vh';
+				tlContent.style.dispay = 'block';
+			}
+			break;
+		case 'top-right':
+			if (window.innerWidth <= 1100) {
 				trActive = 'translateX(0) translateY(0)';
 				tlContent.style.transform = 'translateX(0vw) translateY(0)';
 				tlContent.style.width = '100vw';
@@ -60,7 +85,7 @@ function handleWindowResize() {
 				tlContent.style.background = 'var(--bg-tranparent)';
 				tlContent.style.zIndex = '200';
 				tlBtn.style.zIndex = '300';
-				// trBtn.style.zIndex = '100';
+				trBtn.style.zIndex = '100';
 				// blBtn.style.zIndex = '100';
 				// brBtn.style.zIndex = '100';
 			} else {
@@ -71,9 +96,6 @@ function handleWindowResize() {
 				tlContent.style.top = '10vh';
 				tlContent.style.dispay = 'block';
 			}
-			break;
-		case 'top-right':
-			// some code
 			break;
 		case 'bottom-left':
 			// some code
@@ -109,7 +131,7 @@ function playAnimation(animation, reverseAnimation) {
 
 function playClosingAnimation(reverseAnimation) {
 	tlBtn.innerHTML = 'About';
-	// trBtn.innerHTML = 'Experience';
+	trBtn.innerHTML = 'Experience';
 	// blBtn.innerHTML = 'Projects';
 	// brBtn.innerHTML = 'Contact';
 
@@ -119,11 +141,11 @@ function playClosingAnimation(reverseAnimation) {
 			tlBtn.style.color = textColor;
 			tlContent.style.transform = tlHidden;
 			break;
-		// case 'top-right':
-		// 	tlBtn.style.background = bgColor;
-		// 	tlBtn.style.color = textColor;
-		// 	tlContent.style.transform = tlHidden;
-		// 	break;
+		case 'top-right':
+			tlBtn.style.background = bgColor;
+			tlBtn.style.color = textColor;
+			tlContent.style.transform = tlHidden;
+			break;
 		// case 'bottom-left':
 		// 	tlBtn.style.background = bgColor;
 		// 	tlBtn.style.color = textColor;
@@ -151,7 +173,7 @@ tlBtn.onclick = function () {
 	if (activeCorner === 'top-left') {
 		playClosingAnimation('reverse-animate-top-left');
 	} else {
-		// trBtn.innerHTML = 'Experience';
+		trBtn.innerHTML = 'Experience';
 		// blBtn.innerHTML = 'Projects';
 		// brBtn.innerHTML = 'Contact';
 
@@ -163,21 +185,21 @@ tlBtn.onclick = function () {
 		playAnimation('animate-top-left', 'reverse-animate-top-left');
 
 		// Change background colors
-		// trBtn.style.background = bgColor;
+		trBtn.style.background = bgColor;
 		// brBtn.style.background = bgColor;
 		// blBtn.style.background = bgColor;
 		tlBtn.style.background = bgColorAlt;
 
 		// Change text colors
 
-		// trBtn.style.color = textColor;
+		trBtn.style.color = textColor;
 		// brBtn.style.color = textColor;
 		// blBtn.style.color = textColor;
 		tlBtn.style.color = textColorAlt;
 
 		// Change positions of the corner content
 
-		// trBtn.style.transform = trHidden;
+		trBtn.style.transform = trHidden;
 		// brBtn.style.transform = brHidden;
 		// blBtn.style.transform = blHidden;
 		tlContent.style.transform = tlActive;

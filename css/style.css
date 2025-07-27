@@ -64,6 +64,7 @@ p {
 	grid-template-columns: 1fr 1fr;
 	height: 100%;
 	width: 100vw;
+	overflow: hidden;
 }
 
 #grid__tl__btn,
@@ -186,7 +187,7 @@ article p {
 	width: 30vw;
 	top: 10vh;
 	right: 0;
-	/* transform: translateX(100vw) translateY(-100vh); */
+	transform: translateX(100vw) translateY(-100vh);
 }
 
 .experience {
@@ -230,6 +231,7 @@ article p {
 }
 
 .experience__skill div div {
-	justify-content: space-between;
 	outline: 1px solid red;
 }
+
+/* BOTTOM LEFT CORNER */
