@@ -222,5 +222,14 @@ article p {
 
 .experience__skill div p {
 	padding: 0;
+}
+
+.experience__skill div h2,
+.experience__skill div p {
+	font-size: 0.8rem;
+}
+
+.experience__skill div div {
+	justify-content: space-between;
 	outline: 1px solid red;
 }
