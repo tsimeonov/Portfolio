@@ -106,7 +106,12 @@ function playAnimation(animation, reverseAnimation) {
 	}
 }
 
-// function playClosingAnimation(reverseAnimation) {}
+function playClosingAnimation(reverseAnimation) {
+	tlBtn.innerHTML = 'About';
+	trBtn.innerHTML = 'Experience';
+	blBtn.innerHTML = 'Projects';
+	brBtn.innerHTML = 'Contact';
+}
 
 // Onclick corner button functions
 tlBtn.onclick = function () {
