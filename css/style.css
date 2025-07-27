@@ -197,8 +197,11 @@ article p {
 }
 
 .experience__skill {
-	/* display: flex;
+	display: flex;
 	flex-direction: column;
 	padding: 1.2rem;
-	outline: 1px solid red; */
+	margin: 0;
+	gap: 0.2rem;
+	width: fit-content;
+	outline: 1px solid red;
 }
