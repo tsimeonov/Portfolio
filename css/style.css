@@ -242,3 +242,10 @@ article p {
 	left: -11.5rem;
 	transform: rotate(45deg);
 }
+
+#grid__bl__content {
+	width: 15rem;
+	bottom: 15vh;
+	left: 0;
+	transform: translateX(-100vw) translateY(100vh);
+}
