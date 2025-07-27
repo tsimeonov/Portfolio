@@ -203,5 +203,11 @@ article p {
 	margin: 0;
 	gap: 0.2rem;
 	width: fit-content;
+}
+
+.experience__skill div {
+	display: flex;
+	align-items: center;
+	width: 13.5rem;
 	outline: 1px solid red;
 }
