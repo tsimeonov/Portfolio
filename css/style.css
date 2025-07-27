@@ -247,5 +247,13 @@ article p {
 	width: 15rem;
 	bottom: 15vh;
 	left: 0;
-	transform: translateX(-100vw) translateY(100vh);
+	/* transform: translateX(-100vw) translateY(100vh); */
+}
+
+.project__img {
+	width: 100%;
+}
+
+.project__title {
+	width: 100%;
 }
