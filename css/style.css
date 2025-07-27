@@ -188,3 +188,10 @@ article p {
 	right: 0;
 	/* transform: translateX(100vw) translateY(-100vh); */
 }
+
+.experience {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+}
