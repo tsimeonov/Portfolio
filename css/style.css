@@ -250,6 +250,16 @@ article p {
 	/* transform: translateX(-100vw) translateY(100vh); */
 }
 
+.project {
+	width: 100%;
+	flex-wrap: wrap;
+	border-radius: 2rem;
+	overflow: hidden;
+	margin: auto auto 0.5rem;
+	border: var(--border);
+	background: var(--bg-alt);
+}
+
 .project__img {
 	width: 100%;
 }
