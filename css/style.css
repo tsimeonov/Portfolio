@@ -173,3 +173,11 @@ article p {
 	text-align: left;
 	margin: 0 1rem;
 }
+
+/* TOP RIGHT CORNER */
+
+#grid__tr__btn {
+	top: -11.5rem;
+	right: -11.5rem;
+	transform: rotate(45deg);
+}
