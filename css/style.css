@@ -209,10 +209,18 @@ article p {
 	display: flex;
 	align-items: center;
 	width: 13.5rem;
-	outline: 1px solid red;
 }
 
 .experience__skill div img {
 	padding: 0;
 	margin-right: 0.5rem;
+}
+
+.experience__skill div h2 {
+	text-align: left;
+}
+
+.experience__skill div p {
+	padding: 0;
+	outline: 1px solid red;
 }
