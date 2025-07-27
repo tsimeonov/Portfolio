@@ -50,6 +50,7 @@ function handleWindowResize() {
 		case 'top-left':
 			if (window.innerWidth <= 1100) {
 				trActive = 'translateX(0) translateY(0)';
+				tlContent.style.transform = 'translateX(0vw) translateY(0)';
 				tlContent.style.width = '100vw';
 				tlContent.style.height = '100vh';
 				tlContent.style.top = '0';
