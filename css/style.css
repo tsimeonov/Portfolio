@@ -236,3 +236,9 @@ article p {
 }
 
 /* BOTTOM LEFT CORNER */
+
+#grid__bl__btn {
+	bottom: -11.5rem;
+	left: -11.5rem;
+	transform: rotate(45deg);
+}
