@@ -256,4 +256,8 @@ article p {
 
 .project__title {
 	width: 100%;
+	margin: 0;
+	padding: 0.3rem;
+	font-size: 1rem;
+	outline: 1px solid red;
 }
