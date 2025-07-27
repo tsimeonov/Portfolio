@@ -108,9 +108,32 @@ function playAnimation(animation, reverseAnimation) {
 
 function playClosingAnimation(reverseAnimation) {
 	tlBtn.innerHTML = 'About';
-	trBtn.innerHTML = 'Experience';
-	blBtn.innerHTML = 'Projects';
-	brBtn.innerHTML = 'Contact';
+	// trBtn.innerHTML = 'Experience';
+	// blBtn.innerHTML = 'Projects';
+	// brBtn.innerHTML = 'Contact';
+
+	switch (activeCorner) {
+		case 'top-left':
+			tlBtn.style.background = bgColor;
+			tlBtn.style.color = textColor;
+			tlContent.style.transform = tlHidden;
+			break;
+		case 'top-right':
+			tlBtn.style.background = bgColor;
+			tlBtn.style.color = textColor;
+			tlContent.style.transform = tlHidden;
+			break;
+		case 'bottom-left':
+			tlBtn.style.background = bgColor;
+			tlBtn.style.color = textColor;
+			tlContent.style.transform = tlHidden;
+			break;
+		case 'bottom-right':
+			tlBtn.style.background = bgColor;
+			tlBtn.style.color = textColor;
+			tlContent.style.transform = tlHidden;
+			break;
+	}
 }
 
 // Onclick corner button functions
