@@ -94,7 +94,7 @@ p {
 #grid__br__content {
 	position: absolute;
 	text-align: center;
-	transition: transfoem 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
 	color: var(--text-alt);
 }
 
