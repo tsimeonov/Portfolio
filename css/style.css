@@ -181,3 +181,10 @@ article p {
 	right: -11.5rem;
 	transform: rotate(45deg);
 }
+
+#grid__tr__content {
+	width: 30vw;
+	top: 10vh;
+	right: 0;
+	/* transform: translateX(100vw) translateY(-100vh); */
+}
