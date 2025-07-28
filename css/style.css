@@ -287,4 +287,9 @@ button {
 }
 
 .arrow {
+	border: var(--border);
+	width: 3rem;
+	height: 2rem;
+	margin: 0;
+	padding: 0.2rem 0;
 }
