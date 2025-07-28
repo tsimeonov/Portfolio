@@ -252,6 +252,7 @@ article p {
 
 .project {
 	width: 100%;
+	display: flex;
 	flex-wrap: wrap;
 	border-radius: 2rem;
 	overflow: hidden;
