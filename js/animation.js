@@ -3,22 +3,22 @@ const heroImage = document.querySelector('#hero__animation__img');
 
 const tl = document.querySelector('#grid__tl');
 const tr = document.querySelector('#grid__tr');
-// const bl = document.querySelector('#grid__bl');
+const bl = document.querySelector('#grid__bl');
 // const br = document.querySelector('#grid__br');
 
 const tlBtn = document.querySelector('#grid__tl__btn');
 const trBtn = document.querySelector('#grid__tr__btn');
-// const blBtn = document.querySelector('#grid__bl__btn');
+const blBtn = document.querySelector('#grid__bl__btn');
 // const brBtn = document.querySelector('#grid__br__btn');
 
 const tlContent = document.querySelector('#grid__tl__content');
 const trContent = document.querySelector('#grid__tr__content');
-// const blContent = document.querySelector('#grid__bl__content');
+const blContent = document.querySelector('#grid__bl__content');
 // const brContent = document.querySelector('#grid__br__content');
 
-// const projectOne = document.querySelector('.p-1');
-// const projectTwo = document.querySelector('.p-2');
-// const projectThree = document.querySelector('.p-3');
+const projectOne = document.querySelector('.p-1');
+const projectTwo = document.querySelector('.p-2');
+const projectThree = document.querySelector('.p-3');
 
 // Define colors and positions
 const bgColor = 'var(--bg)';
@@ -61,7 +61,7 @@ function handleWindowResize() {
 				tlContent.style.zIndex = '200';
 				tlBtn.style.zIndex = '300';
 				trBtn.style.zIndex = '100';
-				// blBtn.style.zIndex = '100';
+				blBtn.style.zIndex = '100';
 				// brBtn.style.zIndex = '100';
 			} else {
 				tlActive = 'translateX(5vw) translateY(0)';
@@ -86,7 +86,7 @@ function handleWindowResize() {
 				trContent.style.zIndex = '200';
 				trBtn.style.zIndex = '300';
 				tlBtn.style.zIndex = '100';
-				// blBtn.style.zIndex = '100';
+				blBtn.style.zIndex = '100';
 				// brBtn.style.zIndex = '100';
 			} else {
 				trActive = 'translateX(-5vw) translateY(0)';
@@ -98,7 +98,36 @@ function handleWindowResize() {
 			}
 			break;
 		case 'bottom-left':
-			// some code
+			if (window.innerWidth <= 600) {
+				trActive = 'translateX(0) translateY(0)';
+				trContent.style.transform = 'translateX(0vw) translateY(0)';
+				trContent.style.width = '100vw';
+				trContent.style.height = '100vh';
+				trContent.style.top = '0';
+				trContent.style.display = 'flex';
+				trContent.style.alignItems = 'center';
+				trContent.style.justifyContent = 'center';
+				trContent.style.background = 'var(--bg-tranparent)';
+				trContent.style.zIndex = '200';
+				trBtn.style.zIndex = '300';
+				tlBtn.style.zIndex = '100';
+				blBtn.style.zIndex = '100';
+				// brBtn.style.zIndex = '100';
+			} else if (window.innerWidth <= 100) {
+				trActive = 'translateX(-5vw) translateY(0)';
+				trContent.style.transform = 'translateX(5vw) translateY(0)';
+				trContent.style.width = '30vw';
+				trContent.style.height = '0';
+				trContent.style.top = '10vh';
+				trContent.style.dispay = 'block';
+			} else {
+			}
+			trActive = 'translateX(-5vw) translateY(0)';
+			trContent.style.transform = 'translateX(5vw) translateY(0)';
+			trContent.style.width = '30vw';
+			trContent.style.height = '0';
+			trContent.style.top = '10vh';
+			trContent.style.dispay = 'block';
 			break;
 		case 'bottom-right':
 			// some code
