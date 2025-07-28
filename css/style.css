@@ -307,3 +307,10 @@ button {
 	color: white;
 	cursor: pointer;
 }
+
+.btn:hover,
+.arrow:hover {
+	background: var(--bg-alt);
+	color: white;
+	cursor: pointer;
+}
