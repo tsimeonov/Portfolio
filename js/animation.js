@@ -99,35 +99,35 @@ function handleWindowResize() {
 			break;
 		case 'bottom-left':
 			if (window.innerWidth <= 600) {
-				trActive = 'translateX(0) translateY(0)';
-				trContent.style.transform = 'translateX(0vw) translateY(0)';
-				trContent.style.width = '100vw';
-				trContent.style.height = '100vh';
-				trContent.style.top = '0';
-				trContent.style.display = 'flex';
-				trContent.style.alignItems = 'center';
-				trContent.style.justifyContent = 'center';
-				trContent.style.background = 'var(--bg-tranparent)';
-				trContent.style.zIndex = '200';
-				trBtn.style.zIndex = '300';
+				blActive = 'translateX(0) translateY(0)';
+				blContent.style.transform = 'translateX(0vw) translateY(0)';
+				blContent.style.width = '100vw';
+				blContent.style.height = '100vh';
+				blContent.style.top = '0';
+				blContent.style.display = 'flex';
+				blContent.style.alignItems = 'center';
+				blContent.style.justifyContent = 'center';
+				blContent.style.background = 'var(--bg-tranparent)';
+				blContent.style.zIndex = '200';
+				trBtn.style.zIndex = '100';
 				tlBtn.style.zIndex = '100';
 				blBtn.style.zIndex = '100';
 				// brBtn.style.zIndex = '100';
 			} else if (window.innerWidth <= 100) {
-				trActive = 'translateX(-5vw) translateY(0)';
-				trContent.style.transform = 'translateX(5vw) translateY(0)';
-				trContent.style.width = '30vw';
-				trContent.style.height = '0';
-				trContent.style.top = '10vh';
-				trContent.style.dispay = 'block';
+				blActive = 'translateX(-5vw) translateY(0)';
+				blContent.style.transform = 'translateX(5vw) translateY(0)';
+				blContent.style.width = '30vw';
+				blContent.style.height = '0';
+				blContent.style.top = '10vh';
+				blContent.style.dispay = 'block';
 			} else {
 			}
-			trActive = 'translateX(-5vw) translateY(0)';
-			trContent.style.transform = 'translateX(5vw) translateY(0)';
-			trContent.style.width = '30vw';
-			trContent.style.height = '0';
-			trContent.style.top = '10vh';
-			trContent.style.dispay = 'block';
+			blActive = 'translateX(-5vw) translateY(0)';
+			blContent.style.transform = 'translateX(5vw) translateY(0)';
+			blContent.style.width = '30vw';
+			blContent.style.height = '0';
+			blContent.style.top = '10vh';
+			blContent.style.dispay = 'block';
 			break;
 		case 'bottom-right':
 			// some code
