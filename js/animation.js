@@ -97,7 +97,63 @@ function handleWindowResize() {
 				trContent.style.dispay = 'block';
 			}
 			break;
+
 		case 'bottom-left':
+			if (window.innerWidth <= 600) {
+				blActive = 'translateX(0) translateY(0)';
+				blContent.style.transform = 'translateX(0vw) translateY(0)';
+				blContent.style.width = '100vw';
+				blContent.style.height = '100vh';
+				blContent.style.top = '0';
+				blContent.style.display = 'flex';
+				blContent.style.alignItems = 'center';
+				blContent.style.justifyContent = 'center';
+				blContent.style.background = 'var(--bg-transparent)';
+				blContent.style.zIndex = '200';
+				trBtn.style.zIndex = '100';
+				tlBtn.style.zIndex = '100';
+				blBtn.style.zIndex = '300';
+				// brBtn.style.zIndex = '100';
+				projectOne.style.width = '70%';
+				projectOne.style.margin = 'auto auto 0.5rem';
+				projectTwo.style.width = '70%';
+				projectTwo.style.margin = 'auto auto 0.5rem';
+				projectThree.style.width = '70%';
+				projectThree.style.margin = 'auto auto 0.5rem';
+			} else if (window.innerWidth <= 1100) {
+				blActive = 'translateX(0) translateY(0)';
+				blContent.style.transform = 'translateX(0vw) translateY(0)';
+				blContent.style.width = '100vw';
+				blContent.style.height = '100vh';
+				blContent.style.top = '0';
+				blContent.style.display = 'flex';
+				blContent.style.alignItems = 'center';
+				blContent.style.justifyContent = 'center';
+				blContent.style.background = 'var(--bg-transparent)';
+				blContent.style.zIndex = '200';
+				trBtn.style.zIndex = '100';
+				tlBtn.style.zIndex = '100';
+				blBtn.style.zIndex = '300';
+				// brBtn.style.zIndex = '100';
+				projectOne.style.width = '40%';
+				projectOne.style.margin = 'auto auto 0.5rem';
+				projectTwo.style.width = '40%';
+				projectTwo.style.margin = 'auto auto 0.5rem';
+				projectThree.style.width = '40%';
+				projectThree.style.margin = 'auto auto 0.5rem';
+			} else {
+				blActive = 'translateX(10vw) translateY(7vh)';
+				blContent.style.transform = 'translateX(10vw) translateY(7vh)';
+				blContent.style.width = '15rem';
+				blContent.style.height = '0';
+				blContent.style.top = '40vh';
+				blContent.style.display = 'block';
+				projectOne.style.width = '100%';
+				projectTwo.style.width = '100%';
+				projectThree.style.width = '100%';
+			}
+			break;
+
 			if (window.innerWidth <= 600) {
 				blActive = 'translateX(0) translateY(0)';
 				blContent.style.transform = 'translateX(0vw) translateY(0)';
@@ -119,7 +175,7 @@ function handleWindowResize() {
 				projectTwo.style.margin = 'auto auto 0.5rem';
 				projectThree.style.margin = '70%';
 				projectThree.style.margin = 'auto auto 0.5rem';
-			} else if (window.innerWidth <= 100) {
+			} else if (window.innerWidth <= 1100) {
 				blActive = 'translateX(0) translateY(0)';
 				blContent.style.transform = 'translateX(0vw) translateY(0)';
 				blContent.style.width = '100vw';
@@ -146,13 +202,14 @@ function handleWindowResize() {
 				blContent.style.width = '15rem';
 				blContent.style.height = '0';
 				blContent.style.top = '40vh';
-				blContent.style.dispay = 'block';
+				blContent.style.dispay = 'display';
 				projectOne.style.width = '100%';
 				projectTwo.style.width = '100%';
 				projectThree.style.width = '100%';
 			}
 
 			break;
+
 		case 'bottom-right':
 			// some code
 			break;
@@ -202,7 +259,7 @@ function playClosingAnimation(reverseAnimation) {
 		case 'bottom-left':
 			blBtn.style.background = bgColor;
 			blBtn.style.color = textColor;
-			blContent.style.transform = tlHidden;
+			blContent.style.transform = blHidden;
 			break;
 		// case 'bottom-right':
 		// 	tlBtn.style.background = bgColor;
