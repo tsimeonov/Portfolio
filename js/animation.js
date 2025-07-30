@@ -302,7 +302,7 @@ blBtn.onclick = function () {
 	} else {
 		tlBtn.innerHTML = 'About';
 		blBtn.innerHTML = 'Experience';
-		brBtn.innerHTML = 'Contact';
+		// brBtn.innerHTML = 'Contact';
 
 		// Setting activeCorner
 		activeCorner = 'bottom-left';
@@ -313,21 +313,21 @@ blBtn.onclick = function () {
 
 		// Change background colors
 		trBtn.style.background = bgColor;
-		brBtn.style.background = bgColor;
+		// brBtn.style.background = bgColor;
 		blBtn.style.background = bgColorAlt;
 		tlBtn.style.background = bgColor;
 
 		// Change text colors
 
 		trBtn.style.color = textColor;
-		brBtn.style.color = textColor;
+		// brBtn.style.color = textColor;
 		blBtn.style.color = textColorAlt;
 		tlBtn.style.color = textColor;
 
 		// Change positions of the corner content
 
 		trBtn.style.transform = trHidden;
-		brBtn.style.transform = brHidden;
+		// brBtn.style.transform = brHidden;
 		blBtn.style.transform = blActive;
 		tlBtn.style.transform = tlHidden;
 	}
